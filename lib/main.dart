@@ -1,14 +1,14 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'app_widget.dart';
 
 void main() {
   runApp(AppFirebase());
 }
 
 class AppFirebase extends StatefulWidget {
-
   @override
-  State<AppFirebase> createState() => _AppFirebaseState();
+  _AppFirebaseState createState() => _AppFirebaseState();
 }
 
 class _AppFirebaseState extends State<AppFirebase> {
@@ -17,17 +17,26 @@ class _AppFirebaseState extends State<AppFirebase> {
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
-      future: _initialization,
+        future: _initialization,
         builder: (context, snapshot) {
-          if(snapshot.hasError){
-            return '';
+          if (snapshot.hasError) {
+            return Material(
+              child: Center(
+                child: Text(
+                  "Não foi possível inicializar o Firebase",
+                  textDirection: TextDirection.ltr,
+                ),
+              ),
+            );
+          } else if (snapshot.connectionState == ConnectionState.done) {
+            return AppWidget();
+          } else {
+            return Material(
+              child: Center(
+                child: CircularProgressIndicator(),
+              ),
+            );
           }
-
-          if(snapshot.connectionState == ConnectionState.done){
-            return '';
-          }
-          return '';
-        }
-    );
+        });
   }
 }
