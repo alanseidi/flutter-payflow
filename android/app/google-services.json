@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "456188625851",
+    "project_id": "flutter-payflow-48998",
+    "storage_bucket": "flutter-payflow-48998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456188625851:android:fb9cd2d3fc141b63b8ba9e",
+        "android_client_info": {
+          "package_name": "com.pay.flow.alan.flutter_payflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456188625851-sgmv8us77g5egrhc5tul9d05n4i28n1u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.pay.flow.alan.flutter_payflow",
+            "certificate_hash": "4806cc22476158b82b96bae1d041e844f41a69bc"
+          }
+        },
+        {
+          "client_id": "456188625851-ns6ot2de2gftkonts2rod837mfh1oge0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf1dgSxN6towmW8ZXj5AavxlDGaW5p6VU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456188625851-ns6ot2de2gftkonts2rod837mfh1oge0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
